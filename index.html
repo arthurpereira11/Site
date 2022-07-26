@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Acionista</title>
+    <!--LIBS CCS-->
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./styles/bulma.min.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="./styles/icofont/icofont.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--LIB JS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EC6NFN203Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EC6NFN203Z');
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <!--PERSONAL JS-->
+    <script src="./js/index.js" defer></script>
+    <!--PERSONAL CSS-->
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./styles/index.min.css"
+        media="all">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" media="all">
+    <!-- META TAGS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Atinga sua tranquilidade financeira se tornando acionista das maiores empresas do Brasil e do mundo através da Bolsa de Valores">
+    <meta http-equiv=”content-language” content=”pt-br”>
+    <meta http-equiv=”content-type” content=”text/html; charset=UTF-8″>
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://arthurpereira.com/">
+    <meta property="og:site_name" content="Acionista">
+    <meta property="og:title" content="Curso - Acionista">
+    <meta property="og:description"
+        content="Atinga sua tranquilidade financeira se tornando acionista das maiores empresas do Brasil e do mundo através da Bolsa de Valores">
+    <meta property="og:image" content="https://arthurpereira.com/assets/images/acionista-na-bolsa.jpeg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <section class="ac-hero">
+        <div class="ac-hero-title">
+            <h1>Acionista</h1>
+        </div>
+        <div class="ac-hero-ingange" style="text-align: center;">
+            <h1>Descubra como ter <span style="color: var(--white);">renda passiva</span><br>sem sair de casa, mesmo
+                que você nunca tenha investido</h1>
+        </div>
+        <div class="ac-hero-video desktop-media">
+            <iframe class="video" src="https://www.youtube.com/embed/mo5tcQQqrDk"
+                title="Acionista - Engajamento" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="is-flex has-text-centered" style="flex-direction: column; margin-top: 1rem;">
+            <!--<h1 style="color: var(--white);">PROMOÇÃO POR TEMPO LIMITADO!</h1>-->
+            <!--<span style="font-size: 0.8rem">de 12 x <span
+                    style="color: var(--white);text-decoration: line-through; font-size: 1rem;">R$ 99,50</span>
+                por:</span>-->
+            
+            <span style="font-size: 1.5rem;">
+                Apenas 12 x
+                <span style="color: var(--white); font-size: 2rem; font-weight: bold;">
+                    de R$ 99,50
+                </span>
+            </span>
+            <div class="buy">
+                <span>QUERO SER ACIONISTA</span>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h1 class="title color-white has-text-centered">Você vai aprender</h1>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/7.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1>1. Planejamento financeiro</h1>
+                        <h2 class="description">
+                            No primeiro módulo do curso você entenderá como fazer
+                            um planejamento financeiro, mesmo antes de você receber
+                            seu salário, além de entender a importância que isso tem na sua vida
+                            financeira.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/3.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1>2. Reserva de emergência</h1>
+                        <h2 class="description">
+                            No segundo módulo do curso você perceberá a
+                            importância de construir sua reserva de emergência.
+                            Também será instruído a colocar ela no local com
+                            maior segurança e liquidez.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/9.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1>3. Corretora de valores</h1>
+                        <h2 class="description">
+                            No terceiro módulo você irá entender o que é corretora de valores
+                            e qual o seu funcionamento no mercado financeiro.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/11.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1>4. Renda fixa x renda variável</h1>
+                        <h2 class="description">
+                            No quarto módulo do curso vou te mostrar os
+                            conceitos de renda fixa e variável. Além de te
+                            instruir, explicando vantagens e desvantagens de
+                            cada um.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/10.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1>5. Bolsa de valores</h1>
+                        <h2 class="description">
+                            No quinto módulo do curso você entenderá como funciona a bolsa
+                            de valores. Também será abordado os riscos atrelados ao retorno
+                            que você pode ter.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/15.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1>6. Ações</h1>
+                        <h2 class="description">
+                            No sexto módulo do curso você irá aprender
+                            conceitos simples, como: "o que é uma ação?" e entenderá
+                            também tudo que você precisa saber para comprar uma ação
+                            com segurança e tranquilidade.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/15.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1>7. Análise das melhores ações</h1>
+                        <h2 class="description">
+                            No sétimo módulo do curso eu irei analisar
+                            as ações que eu considero as melhores da bolsa.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/14.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1 class="is-bonus">8. Fundos Imobiliários</h1>
+                        <h2 class="description">
+                            No oitavo módulo do curso você aprenderá um
+                            dos melhores investimentos em renda variável disponíveis
+                            e como eles podem te gerar uma renda mensal isenta de
+                            imposto de renda. Irá também entender o que analisar em
+                            cada fundo imobiliário e escolher os melhores para investir.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/14.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1 class="is-bonus">9. Análise dos melhores fundos imobiliários</h1>
+                        <h2 class="description">
+                            No nono módulo do curso eu irei analisar os
+                            fundos imobiliários que eu considero os melhores da bolsa.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="columns">
+                    <div class="columm center-image ">
+                        <figure class="image is-128x128">
+                            <img class="" src="assets/miniaturas/16.png" width="82" height="82" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1 class="is-bonus">10. Montando uma carteira diversificada aplicando o Buy and Hold</h1>
+                        <h2 class="description">
+                            No décimo módulo do curso você aprenderá o que
+                            é a metodologia de investimentos buy and hold e como
+                            ela pode ser aplicada por qualquer pessoa. Também entenderá
+                            a importância de montar uma carteira diversificada de acordo
+                            com seus critérios, definindo porcentagem aos seus investimentos.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="buy" style="margin-top: 20px;">
+                <span>QUERO SER ACIONISTA</span>
+                <img width="235" height="65" class="has-text-centered" src="/assets/images/pagamento-hotmart.png"
+                    alt="Hotmart, Mastercard, Visa, Boleto, Paypal" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section stocks-section" style="background-color: #15151b;">
+        <h1 class="title color-white has-text-centered">
+            Aprenda a investir nas maiores empresas do Brasil e do mundo
+            <i class="icofont-world"></i>
+        </h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/weg.png" alt="Weg">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/itau.jpg" alt="Itaú">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/ambev.jpg" alt="Ambev">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/bradesco.jpg" alt="Bradesco">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/b3.jpg" alt="B3">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/apple.jpg" alt="Apple">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/amazon-2.jpg" alt="Amazon">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/microsoft.jpg" alt="Microsoft">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/facebook-2.jpg" alt="Facebook">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="1000">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by3">
+                                <img src="/assets/images/stocks/google.jpg" alt="Google">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section price-section">
+        <div class="price-info">
+            <h1 class="is-size-2 is-size-1-desktop">Hoje você poderá adquirir o<br>curso completo por apenas</h1>
+            <h2 class="is-size-2 is-size-1-desktop">12 x R$ 99,50</h2>
+            <img src="/assets/images/sete-dias.png" alt="Garantia Incondicional" width="250" height="250">
+            <h3 class="is-size-6 is-size-5-desktop" style="padding: 0.5rem;">O risco é todo meu. Até 7 dias após o
+                pagamento, você pode cancelar por qualquer motivo e devolverei todo o valor pago.</h3>
+        </div>
+        <div>
+            <div class="buy" style="margin-top: 20px;">
+                <span>QUERO SER ACIONISTA</span>
+                <img width="235" height="65" class="has-text-centered" src="/assets/images/pagamento-hotmart.png"
+                    alt="Hotmart, Mastercard, Visa, Boleto, Paypal" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: #15151b;">
+        <div class="container faq">
+            <h1 class="title color-white has-text-centered">FAQ</h1>
+            <h2 class="subtitle color-white has-text-centered">
+                Perguntas frequentes
+            </h2>
+            <div>
+                <div class="card">
+                    <header class="card-header question">
+                        <p class="card-header-title">Como irá funcionar o curso?</p>
+                        <span class="card-header-icon" aria-label="Ver">
+                            <span class="icon">
+                                <i class="icofont-plus" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </header>
+                    <div class="card-content invisible-answer">
+                        <div class="content">
+                            O curso é 100% online, facilitando que você assista
+                            na hora que você quiser e de onde você preferir. Somente é preciso ter conexão com a
+                            internet.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card-header question">
+                        <p class="card-header-title">Por onde receberei o acesso ao curso?</p>
+                        <span class="card-header-icon" aria-label="Ver">
+                            <span class="icon">
+                                <i class="icofont-plus" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </header>
+                    <div class="card-content invisible-answer">
+                        <div class="content">
+                            Você receberá um e-mail com os dados para acesso ao
+                            curso após a confirmação do pagamento.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card-header question">
+                        <p class="card-header-title">Durante o curso, posso tirar minhas dúvidas?</p>
+                        <span class="card-header-icon" aria-label="Ver">
+                            <span class="icon">
+                                <i class="icofont-plus" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </header>
+                    <div class="card-content invisible-answer">
+                        <div class="content">
+                            Você poderá tirar todas suas dúvidas
+                            por e-mail.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card-header question">
+                        <p class="card-header-title">O acesso é anual?</p>
+                        <span class="card-header-icon" aria-label="Ver">
+                            <span class="icon">
+                                <i class="icofont-plus" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </header>
+                    <div class="card-content invisible-answer">
+                        <div class="content">
+                            Sim. O acesso é anual e renovado após um ano
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <header class="card-header question">
+                        <p class="card-header-title">E se, após comprar o curso, eu não gostar?</p>
+                        <span class="card-header-icon" aria-label="Ver">
+                            <span class="icon">
+                                <i class="icofont-plus" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </header>
+                    <div class="card-content invisible-answer">
+                        <div class="content">
+                            Eu tenho a convicção que o Acionista será
+                            um grande passo rumo a sua tranquilidade financeira através
+                            da bolsa de valores. Mas, se durante o prazo de 7 dias
+                            após sua compra você não gostar do curso, você receberá o
+                            reembolso INTEGRAL de todo o valor investido. Basta que você
+                            envie um e-mail para suporte@arthurpereira.com e informe que
+                            quer solicitar o reembolso. Assim que for recebido o e-mail,
+                            já será feito todo o processo para que você tenha o valor devolvido.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy" style="margin-top: 20px;">
+            <span>QUERO SER ACIONISTA</span>
+            <img width="235" height="65" class="has-text-centered" src="/assets/images/pagamento-hotmart.png"
+                alt="Hotmart, Mastercard, Visa, Boleto, Paypal" />
+        </div>
+    </section>
+
+    <!--MODAL-->
+    <div class="modal" id="modal-enjamento">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Digite seu melhor e-mail</p>
+                <button class="delete" id="modal-enjamento-close" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input" type="email" placeholder="E-mail" id="emailInput">
+                        <span class="icon is-small is-left">
+                            <i class="icofont-email"></i>
+                        </span>
+                    </div>
+                    <p class="help is-danger is-hidden" id="help-email">E-mail inválido</p>
+                </div>
+            </section>
+            <footer class="modal-card-foot" style="justify-content: flex-end;">
+                <button class="button" id="modal-enjamento-checkout"
+                    style="color: var(--white); background-color: var(--primary); font-weight: bold; font-size: 16px;">FINALIZAR
+                    INSCRIÇÃO</button>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

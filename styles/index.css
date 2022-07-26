@@ -1,0 +1,373 @@
+:root {
+    --primary: #00011f;
+    --green: #1ed760;
+    --secondary: #1be7ff;
+    --yellow: #ffdd57;
+    --golden: #ffde39;
+    --orange: #ff5714;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #212326;
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+@font-face {
+    font-family: 'IcoFont';
+    src: local('icofont'),
+        url('./icofont/icofont.woff2') format('woff2'),
+        url('./icofont/icofont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.5.1');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family:"bunday-sans-bold";
+    src: url("./fonts/BundaySansBold.otf") format("opentype");
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #042333;
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+.is-bonus:after {
+    content: "BÔNUS";
+    position: relative;
+    font-size: 0.7rem;
+    background: var(--primary);
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.module {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.module .columns {
+    align-items: center;
+}
+
+.module h1 {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.module .description {
+    margin-top: 10px;
+}
+
+.module img {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.module figure:before {
+    content: "";
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    left: -3px;
+    border: 3px dotted var(--primary);
+    border-radius: 100px;
+    transform: translate(-50%,-50%) rotate(0deg);
+    animation: iconRotate 15s cubic-bezier(0.075, 0.82, 0.165, 0.3) infinite;
+}
+
+@keyframes iconRotate {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes teste {
+    0% {box-shadow: none;}
+    30% {box-shadow: 0 0 0.2em var(--golden);}
+    60% {box-shadow: 0 0 0.4em var(--golden);}
+    90% {box-shadow: 0 0 0.2em var(--golden);}
+    100% {box-shadow: none;}
+}
+
+.center-image {
+    text-align: -webkit-center;
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-bg {
+    background: url(/assets/images/pagamento-hotmart.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 45px;
+}
+
+.buy span {
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    border-radius: 6px;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center;
+    padding: 18px 20px;
+    min-height: 64px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    background-color: #01fbfd;
+    bottom: 0px;
+    animation: teste 2s infinite;
+    animation-play-state: paused;
+    font-family: "bunday-sans-bold";
+}
+
+.buy span:hover {
+    animation-play-state: running;
+}
+
+.color-white {
+    color: var(--white);
+}
+
+.visible-answer {
+    display: block;
+}
+
+.invisible-answer {
+    display: none;
+}
+
+.card-header:hover {
+    cursor: pointer!important;
+}
+
+.faq .card {
+    background-color: var(--black)!important;
+    color: var(--white);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+}
+
+.card-header-title {
+    color: var(--white);
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 40px);
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/bolsa-company.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video .title {
+    text-align: center;
+    color: var(--white);
+    font-size: 5rem;
+}
+
+.desktop-media {
+    width: 50vw;
+}
+
+.buy-hero {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+}
+
+.arrow.animated {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 1px;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background: #163f2d;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+.arrow.animated::before,
+.arrow.animated::after {
+  position: absolute;
+  top: -23px;
+  content: "";
+  height: 30px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.arrow.animated::before {
+  left: -10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform:    rotate(-45deg);
+  -ms-transform:     rotate(-45deg);
+  -o-transform:      rotate(-45deg);
+  transform:         rotate(-45deg);
+}
+
+.arrow.animated::after {
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  transform:         rotate(45deg);
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.swiper-slide .card {
+    background-color: #15151b;
+}
+
+.swiper-slide .card figure img {
+    border-radius: 5%;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: #111b27;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-container {
+    width: 95%;
+}
+
+@media (max-width: 768px) {
+    .ac-hero-video {
+        width: 90%!important;
+        height: 30vh!important;
+    }
+    .ac-hero-ingange h1 {
+        font-size: 1.5rem!important;
+    }
+    .ac-hero {
+        height: 100%!important;
+    }
+}
+
+.title .bolsa {
+    color: var(--white);
+}
+
+.title .na {
+    color: var(--white);
+}
+
+.ac-hero {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primary);
+    font-weight: 900;
+    font-family: "bunday-sans-bold";
+}
+
+.ac-hero-title h1 {
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.ac-hero-ingange h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.ac-hero-ingange span {
+    color: var(--white);
+}
+
+.ac-hero-video {
+    height: 60vh;
+    width: 50vw;
+}
+
+.ac-hero-video .video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div[class^="video-media-youtube-inner-vi"] {
+    flex: 1;
+}
